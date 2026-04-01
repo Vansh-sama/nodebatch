@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "course": "Mathematics"
+  },
+  {
+    "id": 2,
+    "course": "Science"
+  },
+  {
+    "id": 3,
+    "course": "English"
+  },
+  {
+    "id": 4,
+    "course": "Computer Science"
+  },
+  {
+    "id": 5,
+    "course": "Physics"
+  },
+  {
+    "id": 6,
+    "course": "Chemistry"
+  },
+  {
+    "id": 7,
+    "course": "Biology"
+  },
+  {
+    "id": 8,
+    "course": "History"
+  },
+  {
+    "id": 9,
+    "course": "Geography"
+  },
+  {
+    "id": 10,
+    "course": "Economics"
+  }
+]
