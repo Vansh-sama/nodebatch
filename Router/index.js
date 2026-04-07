@@ -4,26 +4,27 @@ const st = require('../controller/Student');
 const te = require('../controller/Teacher');
 const co = require('../controller/Course');
 const ur =require('../controller/User')
+const { verifyToken } = require('../controller/User');
 
-router.get('/getStudent', st.getStudentdata);
-router.post('/addStudent', st.insertStudentdata);
-router.put('/updateStudent', st.updateStudentdata);
-router.delete('/deleteStudent',st.deleteStudentdata);
 
-router.get('/getTeacher', te.getTeacherdata);
-router.post('/addTeacher', te.insertTeacherdata);
-router.put('/updateTeacher', te.updateTeacherdata);
-router.delete('/deleteTeacher',te.deleteTeacherdata);
+router.get('/getStudent', verifyToken, st.getStudentdata);
+router.post('/addStudent', verifyToken, st.insertStudentdata);
+router.put('/updateStudent', verifyToken, st.updateStudentdata);
+router.delete('/deleteStudent', verifyToken, st.deleteStudentdata);
 
-router.get('/getCourse', co.getCoursedata);
-router.post('/addCourse', co.insertCoursedata);
-router.put('/updateCourse', co.updateCoursedata);
-router.delete('/deleteCourse',co.deleteCoursedata);
+router.get('/getTeacher', verifyToken, te.getTeacherdata);
+router.post('/addTeacher', verifyToken, te.insertTeacherdata);
+router.put('/updateTeacher', verifyToken, te.updateTeacherdata);
+router.delete('/deleteTeacher', verifyToken, te.deleteTeacherdata);
 
-router.get('/getUser', ur.getUserdata);
-router.post('/addUser', ur.insertUserdata);
-router.put('/updateUser', ur.updateUserdata);
-router.delete('/deleteUser',ur.deleteUserdata);
+router.get('/getCourse', verifyToken, co.getCoursedata);
+router.post('/addCourse', verifyToken, co.insertCoursedata);
+router.put('/updateCourse', verifyToken, co.updateCoursedata);
+router.delete('/deleteCourse', verifyToken, co.deleteCoursedata);
+
+router.get('/getUser', verifyToken, ur.getUserdata);
+router.post('/login', ur.loginUser);
+
 
 router.get('/getstudentmarks', (req, res) => {
   const users = [
