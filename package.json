@@ -9,6 +9,23 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.1.0",
-    "nodemon": "^3.1.14"
-  }
+    "nodemon": "^3.1.14",
+    "socket.io": "^4.8.3"
+  },
+  "name": "softechapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vansh-sama/nodebatch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vansh-sama/nodebatch/issues"
+  },
+  "homepage": "https://github.com/Vansh-sama/nodebatch#readme"
 }
